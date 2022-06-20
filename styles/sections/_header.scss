@@ -1,0 +1,54 @@
+.position {
+  background-color : #FFFFFF;
+  padding          : 0 40px;
+  position         : sticky;
+  top              : 0;
+  z-index          : 2;
+}
+
+.header {
+  align-items        : center;
+  animation-duration : 2s;
+  animation-name     : moveInTop;
+  display            : flex;
+  flex-direction     : row;
+  height             : 96px;
+  justify-content    : space-between;
+
+  &__logo {
+    height : 34px;
+    width  : 120px;
+  }
+
+  &__nav {
+    height : 20px;
+    width  : 642px;
+  }
+}
+
+.nav-list {
+  align-items     : center;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  list-style      : none;
+  margin          : 0;
+  transition      : all 0.5s;
+
+  &__event:hover {
+    border-bottom : 2px solid #2639ED;
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity   : 0;
+    transform : translateY(-10px);
+  }
+
+
+  100% {
+    opacity : 1;
+  }
+}
+

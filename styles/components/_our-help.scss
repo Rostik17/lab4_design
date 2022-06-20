@@ -1,0 +1,59 @@
+.our-help {
+  display       : flex;
+  height        : 867px;
+  margin-bottom : 146px;
+  padding       : 0 39px;
+
+  &__text {
+    align-items     : center;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    left            : 0;
+    margin-right    : 91px;
+    position        : relative;
+    top             : 0;
+
+    &:before {
+      background-image  : url("img/section_3/points.png");
+      background-repeat : no-repeat;
+      bottom            : 80px;
+      content           : '';
+      height            : 154px;
+      position          : absolute;
+      right             : -30px;
+      width             : 405px;
+      z-index           : -2;
+    }
+
+    &:after {
+      background-image  : url("img/section_3/el.svg");
+      background-repeat : no-repeat;
+      content           : '';
+      height            : 178px;
+      left              : -40px;
+      position          : absolute;
+      top               : 32%;
+      width             : 178px;
+      z-index           : -1;
+    }
+  }
+}
+
+.business-criteria {
+  display  : flex;
+  position : relative;
+  top      : 0;
+
+  &:before {
+    background-image  : url("img/section_3/Rectangle_bg.png");
+    background-repeat : no-repeat;
+    bottom            : -60px;
+    content           : '';
+    height            : 819px;
+    position          : absolute;
+    right             : -153px;
+    width             : 1047px;
+    z-index           : -1;
+  }
+}

@@ -1,0 +1,40 @@
+.footer {
+  display         : flex;
+  justify-content : space-between;
+  margin-bottom   : 29px;
+  margin-top      : 60px;
+
+  &__nav {
+    display         : flex;
+    justify-content : space-between;
+    width           : 64%;
+  }
+
+  &__column {
+    max-width : 270px;
+  }
+
+  &__logo {
+    height : 30px;
+    width  : 106px;
+  }
+
+  &__company {
+    display         : flex;
+    justify-content : center;
+    margin          : 17px 0 23px 0;
+  }
+}
+
+.social-links {
+  cursor       : pointer;
+  height       : 36px;
+  margin-right : 16px;
+  width        : 36px;
+}
+
+
+.list {
+  margin-top : 24px;
+  padding    : 0;
+}

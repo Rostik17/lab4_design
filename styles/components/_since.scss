@@ -1,0 +1,43 @@
+.since {
+  align-items     : center;
+  display         : flex;
+  justify-content : space-between;
+
+  &__video {
+    max-width : 500px;
+    position  : relative;
+
+    &:before {
+      background-image  : url("img/section_4/el.svg");
+      background-repeat : no-repeat;
+      bottom            : 0;
+      content           : '';
+      height            : 129px;
+      position          : absolute;
+      right             : -41px;
+      width             : 129px;
+      z-index           : -1;
+    }
+
+    .video {
+      height : 372px;
+      width  : 550px;
+    }
+  }
+
+  &__text {
+    max-width : 500px;
+    position  : relative;
+
+    &:before {
+      background-image : url("img/section_4/bl.svg");
+      content          : '';
+      height           : 178px;
+      left             : -39px;
+      position         : absolute;
+      top              : -24px;
+      width            : 178px;
+      z-index          : -1;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.btn {
+  background     : #2639ED;
+  border         : none;
+  border-radius  : 60px;
+  color          : white;
+  cursor         : pointer;
+  height         : 60px;
+  letter-spacing : 0.065em;
+  line-height    : 20px;
+  transition     : all 0.3s;
+  width          : 188px;
+
+  &__input {
+    bottom   : 0;
+    position : absolute;
+    right    : 10px;
+    top      : 10px;
+  }
+}
+
+.btn:hover {
+  transform : scale(1.05);
+}
+
+.btn:active {
+  background-color : darkblue;
+  transform        : scale(1.0);
+}

@@ -1,0 +1,65 @@
+.text {
+  color       : #565656;
+  font-family : FiraSans;
+  font-size   : 16px;
+  margin: 0;
+  font-style  : normal;
+  font-weight : 400;
+  line-height : 160%;
+
+  &__l {
+    font-size : 18px;
+  }
+
+  &__s {
+    font-size   : 14px;
+    line-height : 200%;
+  }
+
+  &__light-gray {
+    color : #A4A4A4;
+  }
+
+  &__black-col {
+    color : black;
+  }
+
+  &__list-style {
+    list-style : none;
+  }
+
+  &__text-dec {
+    text-decoration : none;
+
+    &:hover {
+      border-bottom : 2px solid darkblue;
+    }
+  }
+}
+
+.title {
+  color       : #000000;
+  font-family : FiraSans;
+  font-size   : 40px;
+  font-style  : normal;
+  font-weight : 600;
+  line-height : 49px;
+  margin      : 0;
+
+  &__l {
+    font-size   : 24px;
+    line-height : 30px;
+  }
+
+  &__m {
+    font-size   : 20px;
+    line-height : 25px;
+  }
+
+  &__s {
+    font-size       : 16px;
+    letter-spacing  : 0.01em;
+    line-height     : 20px;
+    text-decoration : none;
+  }
+}

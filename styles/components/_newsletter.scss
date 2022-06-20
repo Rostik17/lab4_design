@@ -1,0 +1,57 @@
+.newsletter {
+  align-items     : center;
+  background      : #F4F9FF;
+  border-radius   : 75px;
+  display         : flex;
+  height          : 292px;
+  justify-content : space-between;
+  margin          : 148px 0;
+  padding         : 0 95px;
+  position        : relative;
+
+  &:before {
+    background-image  : url("img/section_6/Rectangle.svg");
+    background-repeat : no-repeat;
+    bottom            : 0;
+    content           : '';
+    height            : 292px;
+    position          : absolute;
+    right             : -50px;
+    top               : 0;
+    width             : 543px;
+    z-index           : 0;
+  }
+
+  &:after {
+    background-image  : url("img/section_6/wit.svg");
+    background-repeat : no-repeat;
+    bottom            : -39px;
+    content           : '';
+    height            : 178px;
+    left              : -39px;
+    position          : absolute;
+    width             : 178px;
+    z-index           : -1;
+  }
+}
+
+.user-event {
+  bottom   : 0;
+  left     : 0;
+  position : relative;
+  right    : 0;
+  top      : 0;
+
+  &:before {
+    background-image  : url("img/section_6/Dot.png");
+    background-repeat : no-repeat;
+    bottom            : 0;
+    content           : '';
+    height            : 154px;
+    position          : absolute;
+    right             : -137px;
+    top               : -157px;
+    width             : 175px;
+    z-index           : -1;
+  }
+}

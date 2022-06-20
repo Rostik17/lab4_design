@@ -1,0 +1,83 @@
+.first-page {
+  display : flex;
+  height  : 608px;
+
+  &__img {
+    animation-duration : 2s;
+    animation-name     : moveInLeft;
+
+    .img {
+      position : relative;
+      right    : -153px;
+      top      : 0;
+
+      &:before {
+        background-image  : url("img/section_1/Rectangle.png");
+        background-repeat : no-repeat;
+        bottom            : 190px;
+        content           : '';
+        height            : 178px;
+        position          : absolute;
+        right             : 292px;
+        width             : 178px;
+        z-index           : 1;
+      }
+
+      &:after {
+        background-image  : url("img/section_1/Ellipse.png");
+        background-repeat : no-repeat;
+        content           : '';
+        height            : 129px;
+        left              : 841px;
+        position          : absolute;
+        top               : 117px;
+        width             : 129px;
+        z-index           : -1;
+      }
+    }
+  }
+
+  &__text {
+    animation-duration : 2s;
+    animation-name     : moveInRight;
+    display            : flex;
+    flex-direction     : column;
+    max-width          : 472px;
+    padding-top        : 123px;
+    position           : relative;
+
+    &:before {
+      background-image  : url("img/section_1/points.png");
+      background-repeat : no-repeat;
+      bottom            : 102px;
+      content           : '';
+      height            : 154px;
+      left              : -55px;
+      position          : absolute;
+      width             : 404px;
+      z-index           : -1;
+    }
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity   : 0;
+    transform : translateX(100px);
+  }
+
+  100% {
+    opacity : 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity   : 0;
+    transform : translateX(-100px);
+  }
+
+  100% {
+    opacity : 1;
+  }
+}
